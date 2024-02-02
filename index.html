@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Shop</title>
+        <!-- DaisyUI and Tailwind CSS Connection -->
+        <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+        <script src="https://cdn.tailwindcss.com"></script>
+    
+        <!-- Google Font Connection -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">   
+        <!-- Fontawesome connection -->
+        <script src="https://kit.fontawesome.com/6e7e069626.js" crossorigin="anonymous"></script>
+    
+        <!-- Tailwind CSS Coloring -->
+        <script>
+            tailwind.config = {
+              theme: {
+                extend: {
+                  colors: {
+                    'black-color': '#131318',
+                    'btn-color': '#B68C5A',
+                    'grey-color': '#A0A0A0',
+                    'heading': '#414040',
+                    'para': '#707070',
+
+                  }
+                }
+              }
+            }
+          </script>
+    
+        <!-- Google Font Styling (RAW CSS) -->
+        <style>
+            .font-lato{
+                font-family: 'Lato', sans-serif;
+            }
+        </style>
+</head>
+<body class="font-lato">
+    <header class="container mx-auto">
+        <nav class="mt-12">
+            <div class="navbar bg-[#F85559] flex flex-row justify-items-center px-12 py-9 rounded-full">
+                <div class="navbar-start hidden lg:flex items-center">
+                    <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
+                      <li><a>Home</a></li>
+                      <li><a>About Us</a></li>
+                      <li><a>Shop</a></li>
+                      <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                <div class="navbar-center">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                  </div>
+                  <div class="flex justify-center items-center gap-4 text-4xl font-extrabold text-white">
+                    <img src="./images/logo.png" alt="">Fruit Burst
+                  </div>
+                </div>
+                <div class="navbar-end relative">
+                  <input type="text" placeholder="Search here" class="text-gray-400 w-1/2 px-7 py-4 rounded-full">
+                  <i class="fa-solid fa-magnifying-glass absolute right-5 text-xl flex justify-center items-center"></i>
+                </div>
+              </div>
+        </nav>
+    </header>
+</body>
+</html>
