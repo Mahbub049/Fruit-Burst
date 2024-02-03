@@ -42,8 +42,8 @@
 </head>
 <body class="font-lato">
     <header class="container mx-auto mb-10">
-        <nav class="mt-12">
-            <div class="navbar bg-[#F85559] flex flex-row justify-items-center px-12 py-9 rounded-full">
+        <nav class="mt-6 lg:mt-12">
+            <div class="navbar lg:bg-[#F85559] flex flex-row justify-items-center lg:px-12 px-4 lg:py-9 rounded-full">
                 <div class="navbar-start hidden lg:flex items-center">
                     <ul class="menu menu-horizontal px-1 text-lg font-medium text-white">
                       <li><a>Home</a></li>
@@ -53,6 +53,11 @@
                     </ul>
                   </div>
                 <div class="navbar-center">
+                  <div class="flex justify-center items-center gap-4 text-4xl font-extrabold lg:text-white">
+                    <img src="./images/logo.png" alt="">Fruit Burst
+                  </div>
+                </div>
+                <div class="navbar-end relative">
                   <div class="dropdown">
                     <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                       <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
@@ -64,23 +69,18 @@
                         <li><a>All Fruits</a></li>
                     </ul>
                   </div>
-                  <div class="flex justify-center items-center gap-4 text-4xl font-extrabold text-white">
-                    <img src="./images/logo.png" alt="">Fruit Burst
-                  </div>
-                </div>
-                <div class="navbar-end relative">
-                  <input type="text" placeholder="Search here" class="text-gray-400 w-1/2 px-7 py-4 rounded-full">
-                  <i class="fa-solid fa-magnifying-glass absolute right-5 text-xl flex justify-center items-center"></i>
+                  <input type="text" placeholder="Search here" class="text-gray-400 w-1/2 px-7 py-4 rounded-full hidden lg:flex">
+                  <i class="fa-solid fa-magnifying-glass absolute right-5 text-xl flex justify-center items-center hidden lg:flex"></i>
                 </div>
               </div>
         </nav>
 
-        <div class="mt-14 relative">
+        <div class="mt-14 relative px-4">
             <div class="carousel w-full">
-                <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner1.png)]  flex flex-col justify-center items-center h-[700px] bg-no-repeat bg-cover bg-center">
+                <div id="slide1" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner1.png)]  flex flex-col justify-center items-center h-[50vh] lg:h-[700px] bg-no-repeat bg-cover bg-center">
                   <div class="text-center text-white mt-16">
-                    <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
-                    <p class="mb-8 text-xl font-medium">We supply highly quality organic products</p>
+                    <h1 class="text-4xl lg:text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-8 lg:text-xl font-medium">We supply highly quality organic products</p>
                     <button class="bg-[#F85559] px-7 py-5 rounded-lg text-xl font-extrabold">Shop Now</button>
                   </div>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -88,10 +88,10 @@
                     <a href="#slide2" class="btn btn-circle bg-black border-0 text-white">❯</a>
                   </div>
                 </div> 
-                <div id="slide2" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner2.png)]  flex flex-col justify-center items-center h-[700px] bg-no-repeat bg-cover bg-center">
+                <div id="slide2" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner2.png)]  flex flex-col justify-center items-center h-[50vh] lg:h-[700px] bg-no-repeat bg-cover bg-center">
                     <div class="text-center text-white mt-16">
-                      <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
-                      <p class="mb-8 text-xl font-medium">We supply highly quality organic products</p>
+                      <h1 class="text-4xl lg:text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
+                      <p class="mb-8 lg:text-xl font-medium">We supply highly quality organic products</p>
                       <button class="bg-[#F85559] px-7 py-5 rounded-lg text-xl font-extrabold">Shop Now</button>
                     </div>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -99,10 +99,10 @@
                     <a href="#slide3" class="btn btn-circle bg-black border-0 text-white">❯</a>
                   </div>
                 </div> 
-                <div id="slide3" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner3.png)]  flex flex-col justify-center items-center h-[700px] bg-no-repeat bg-cover bg-center">
+                <div id="slide3" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner3.png)]  flex flex-col justify-center items-center h-[50vh] lg:h-[700px] bg-no-repeat bg-cover bg-center">
                     <div class="text-center text-white mt-16">
-                      <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
-                      <p class="mb-8 text-xl font-medium">We supply highly quality organic products</p>
+                      <h1 class="text-4xl lg:text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
+                      <p class="mb-8 lg:text-xl font-medium">We supply highly quality organic products</p>
                       <button class="bg-[#F85559] px-7 py-5 rounded-lg text-xl font-extrabold">Shop Now</button>
                     </div>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -110,10 +110,10 @@
                     <a href="#slide4" class="btn btn-circle bg-black border-0 text-white">❯</a>
                   </div>
                 </div> 
-                <div id="slide4" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner4.png)]  flex flex-col justify-center items-center h-[700px] bg-no-repeat bg-cover bg-center">
+                <div id="slide4" class="carousel-item relative w-full bg-[linear-gradient(45deg,rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner4.png)]  flex flex-col justify-center items-center h-[50vh] lg:h-[700px] bg-no-repeat bg-cover bg-center">
                     <div class="text-center text-white mt-16">
-                      <h1 class="text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
-                      <p class="mb-8 text-xl font-medium">We supply highly quality organic products</p>
+                      <h1 class="text-4xl lg:text-7xl font-extrabold mb-6">Exotic tastes at your <br> doorstep</h1>
+                      <p class="mb-8 lg:text-xl font-medium">We supply highly quality organic products</p>
                       <button class="bg-[#F85559] px-7 py-5 rounded-lg text-xl font-extrabold">Shop Now</button>
                     </div>
                   <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -122,7 +122,7 @@
                   </div>
                 </div>
             </div>
-            <div class="flex justify-evenly bg-white px-16 py-12 mx-28 bottom-32 rounded-lg shadow-xl relative">
+            <div class="lg:flex justify-evenly bg-white px-16 py-12 mx-28 bottom-32 rounded-lg shadow-xl relative hidden">
                 <div class="flex flex-col justify-center items-center gap-4">
                     <img src="./images/fruit1.png" alt="">
                     <p>Strawberry</p>
@@ -147,15 +147,15 @@
         </div>
     </header>
 
-    <main class="container mx-auto">
-        <section class="mb-28">
-            <div class="flex justify-between mb-12">
-                <div>
+    <main class="container mx-auto px-4 lg:px-0">
+        <section class="mb-28 mt-24 lg:mt-0">
+            <div class="flex flex-col lg:flex-row justify-between mb-12 lg:gap-0 gap-10">
+                <div class="text-center lg:text-start">
                     <h1 class="text-5xl font-extrabold mb-6">Deal of the day</h1>
-                    <p class="w-8/12 text-gray-400 font-semibold">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                    <p class="w-8/12 text-gray-400 font-semibold mx-auto lg:mx-0">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <div>
-                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+                    <div class="grid grid-flow-col gap-5 text-center auto-cols-max lg:justify-start justify-center">
                         <div class="flex gap-6">
                             <div class="flex flex-col">
                                 <span class="countdown font-mono text-5xl font-extrabold">
@@ -199,7 +199,7 @@
                 </div>
             </div>
 
-            <div class="mb-12 grid grid-cols-4 gap-6">
+            <div class="mb-12 grid grid-cols-1 lg:grid-cols-4 gap-6">
                 <div class="border-2 border-[#1212121A] bg-white rounded-lg flex flex-col justify-center items-center py-12">
                     <img src="./images/fruit6.png" alt="">
                     <h3 class="my-12 text-2xl font-bold">12.90$ - 18.85$</h3>
@@ -260,12 +260,12 @@
         </section>
 
         <section class="mb-28">
-          <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner1.png)] bg-cover bg-no-repeat py-28 rounded-lg">
+          <div class="bg-[linear-gradient(rgba(19,19,24,0.50),rgba(19,19,24,0.50)),url(./images/banner1.png)] bg-cover bg-center bg-no-repeat py-8 lg:py-28 rounded-lg">
             <div class="flex flex-col text-white justify-center items-center text-center gap-6">
-              <h1 class="text-6xl font-extrabold">Meet the team section</h1>
-              <p class="w-5/12 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              <h1 class="text-3xl lg:text-6xl font-extrabold">Meet the team section</h1>
+              <p class="w-8/12 lg:w-5/12 font-medium">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
             </div>
-            <div class="grid grid-cols-4 mt-12 px-60">
+            <div class="grid grid-cols-1 lg:grid-cols-4 mt-12 lg:px-60 lg:gap-0 gap-6">
               <div class="text-white flex flex-col justify-center items-center">
                 <img class="mx-auto" src="./images/member1.png" alt="">
                 <h4 class="text-2xl font-bold pt-8 pb-2">Awlad Hossain</h4>
